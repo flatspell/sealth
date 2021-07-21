@@ -16,4 +16,4 @@ Objective 3:
 
 # Who/what/why Sealth?
 Chief Seattle (c. 1786 – June 7, 1866) was a Suquamish and Duwamish chief. The city of Seattle was named after him. A widely publicized speech arguing in favor of ecological responsibility and respect of Native Americans' land rights had been attributed to him.
-![Chief Sealth](https://github.com/lucaswiley/sealth/blob/main/chief_sealth.jpeg | width=100)
+![Chief Sealth](https://github.com/lucaswiley/sealth/blob/main/chief_sealth.jpeg | width=250)
