@@ -1,8 +1,8 @@
 # sealth
-Estimating, plotting, prediction carbon emissions
+Estimating, plotting, predicting carbon emissions of metro seattle
 
 Objective 1:
-- Estimate carbon emissions of metropolitan seattle, ideally by neighborhood or zip code
+- Estimate carbon emissions , ideally by neighborhood or zip code
 
 Objective 2:
 - Be able to plot those emissions:
