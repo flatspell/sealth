@@ -1,0 +1,13 @@
+## generic files to ignore
+*~
+*.lock
+*.DS_Store
+*.swp
+*.out
+*.log
+log/*
+tmp/*
+
+
+# python specific
+*.pyc
