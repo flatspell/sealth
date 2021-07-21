@@ -11,3 +11,4 @@ tmp/*
 
 # python specific
 *.pyc
+.pynb_checkpoints
