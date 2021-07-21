@@ -15,7 +15,7 @@ Estimating, plotting, predicting carbon emissions of metro seattle
 
 
 # namesake
-Chief Seattle (c. 1786 – June 7, 1866) was a Suquamish and Duwamish chief. The city of Seattle was named after him. A widely publicized speech arguing in favor of ecological responsibility and respect of Native Americans' land rights had been attributed to him.
+Chief Sealth (c. 1786 – June 7, 1866), was a Suquamish and Duwamish chief. The city of Seattle was named after him. A widely publicized speech arguing in favor of ecological responsibility and respect of Native Americans' land rights had been attributed to him.
 
 <p align="center">
   <img width="261" height="400" src="https://github.com/lucaswiley/sealth/blob/main/chief_sealth.jpeg">
