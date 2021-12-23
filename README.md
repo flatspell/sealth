@@ -13,6 +13,11 @@ Estimating, plotting, predicting carbon emissions of metro seattle. Desired tech
 - Predict future carbon emissions given a point in time and present inputs
 - Optional, configure predictive exogenous inputs
 
+# motivations
+Build new data sources for geospatial information such as satellite imagery, LiDAR, radar, and field plots,
+Design and construct robust pipelines for the ingest of geospatial data,
+Create a geospatial data warehouse and platform for scientists and machine learning engineers,
+Implement cutting edge pre-processing algorithms for sensor data to produce quality features for ML,
 
 # namesake
 Chief Sealth (c. 1786 – June 7, 1866), was a Suquamish and Duwamish chief. The city of Seattle was named after him. A widely publicized speech arguing in favor of ecological responsibility and respect of Native Americans' land rights had been attributed to him.
