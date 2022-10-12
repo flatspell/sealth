@@ -31,3 +31,4 @@ Chief Sealth (c. 1786 – June 7, 1866), was a Suquamish and Duwamish chief. T
 <p align="center">
   <img width="261" height="400" src="https://github.com/lucaswiley/sealth/blob/main/chief_sealth.jpeg">
 </p>
+If all the beasts were gone, men would die from a great loneliness of spirit, for whatever happens to the beasts also happens to the man. All things are connected. Whatever befalls the Earth befalls the sons of the Earth. - Chief Seattle
