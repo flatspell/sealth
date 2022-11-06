@@ -12,3 +12,6 @@ tmp/*
 # python specific
 *.pyc
 .pynb_checkpoints
+
+# api keys
+.env
