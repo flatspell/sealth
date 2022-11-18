@@ -13,5 +13,6 @@ tmp/*
 *.pyc
 .pynb_checkpoints
 
-# api keys
+# environments
+.venv
 .env
