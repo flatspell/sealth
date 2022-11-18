@@ -1,5 +1,0 @@
-
-- EPA Calculator: https://www3.epa.gov/carbon-footprint-calculator/
-- Code Snippets: https://n8henrie.com/uploads/2017/11/plotting-us-census-data-with-python-and-geopandas.html
-- Berkeley has solved this: https://www.fastcompany.com/3024554/a-map-of-the-carbon-footprint-of-all-31000-zip-codes-in-the-us
-- https://rael.berkeley.edu/wp-content/uploads/2015/04/Jones-Kammen-EST_proof-NationalCarbonMap.pdf
