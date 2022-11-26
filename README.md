@@ -1,5 +1,7 @@
 # sealth
-Estimating, plotting, predicting carbon emissions of metro seattle. Desired technology: Apache Beam, Kafka, Docker, Terraform, Geopandas, Geojson.
+Estimating, plotting, predicting carbon emissions of metro seattle. 
+
+Desired technology: Apache Beam, Kafka, Docker, Terraform, Geopandas, Geojson.
 
 ### Objective 1:
 - Estimate carbon emissions , ideally by neighborhood or zip code
