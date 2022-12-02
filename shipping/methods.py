@@ -2,6 +2,36 @@
 # need weight, distance, emissions_factor
 # co2 = shortTon * miles * emissions_factor
 
+# origin/destination api pull
+import googlemaps
+import os
+from dotenv import load_dotenv
+load_dotenv()
+
+#define api key
+API_KEY = os.getenv('API_KEY')
+
+# set up google distance matrix API key
+gmaps = googlemaps.Client(key = API_KEY)
+
+#origin input
+def locations(origins, destinations, mode):
+    origins = origins
+    destinations = destinations
+    mode = mode
+origins = str(input("Package origin address?"))
+destinations = str(input("Package destination address?"))
+mode = str("driving")
+
+def distance(meters):
+    meters = meters
+meters = gmaps.distance_matrix(
+              origins = origins, 
+              destinations = destinations, 
+              mode = mode)["rows"][0]["elements"][0]["distance"]["value"]
+
+
+
 # weight conversion
 def pounds_to_tons(pounds):
     shortTon = pounds/2000
@@ -15,13 +45,12 @@ print("Package weighs {} pounds or {} short tons" .format(pounds, shortTon))
 def meters_to_miles(meters):
     miles = meters *0.000621371
     return float(miles)
-meters = float(input("Shipping distance in meters?  "))
 miles = meters_to_miles(meters)
-print("Package will travel {} meters or {} miles" .format(meters, miles))
+print("Package will travel {} miles" .format(round(miles, 2)))
 
 # emissions factor
 emissions_factor = 161.8
-print(emissions_factor)
+
 
 # model:
 # co2 = shortTon * miles * emissions_factor
@@ -29,7 +58,7 @@ grams_co2 = shortTon * miles * emissions_factor
 lbs_co2 = grams_co2 * 0.0022046226
 
 # final output
-print("Shipping this package will generate {} grams or {} pounds of co2 emissions." .format(grams_co2, lbs_co2))
+print("Shipping this package will generate {} pounds of CO2 emissions." .format(round(lbs_co2, 2)))
 
 
 
