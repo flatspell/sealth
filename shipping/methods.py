@@ -37,4 +37,6 @@ def shipping_co2():
         .format(round(miles, 2), round(lbs_co2, 2))
         )
 
+shipping_co2()
+
 
