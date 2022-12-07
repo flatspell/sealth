@@ -12,11 +12,17 @@ API_KEY = os.getenv('API_KEY')
 gmaps = googlemaps.Client(key = API_KEY)
 
 # co2 function bundled with api call, works well
-def shipping_co2():
+def shipping_co2(origin, destination, weight_lbs):
+    """
+    params:
+    origin: origin address of shipment
+    destination: destination of shipment
+    weight_lbs: float weight in lbs
+    """
     # inputs
-    origins_input = str(input("Package origin address?"))
-    destinations_input = str(input("Package destination address?"))
-    pounds = float(input("Package weight in pounds?  "))
+    origin = str(input("Package origin address?"))
+    destination = str(input("Package destination address?"))
+    weight = float(input("Package weight in pounds?  "))
     
     #api call
     meters = gmaps.distance_matrix(
@@ -37,6 +43,8 @@ def shipping_co2():
         .format(round(miles, 2), round(lbs_co2, 2))
         )
 
-shipping_co2()
-
-
+shipping_co2(
+    "2220 S Oak St, Port Angeles, WA, 98362"
+    , "2000 Pennsylvania Ave, Washington, D.C. 11100"
+    , 123.45
+)
