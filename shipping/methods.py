@@ -12,39 +12,43 @@ API_KEY = os.getenv('API_KEY')
 gmaps = googlemaps.Client(key = API_KEY)
 
 # co2 function bundled with api call, works well
-def shipping_co2(origin, destination, weight_lbs):
+def shipping_co2(origins, destinations, weight_kg):
     """
     params:
     origin: origin address of shipment
     destination: destination of shipment
-    weight_lbs: float weight in lbs
+    weight_kg: float weight in kg
     """
-    # inputs
-    origin = str(input("Package origin address?"))
-    destination = str(input("Package destination address?"))
-    weight = float(input("Package weight in pounds?  "))
     
-    #api call
+    # api call
     meters = gmaps.distance_matrix(
-        origins = origins_input,
-        destinations = destinations_input,
+        origins = origins,
+        destinations = destinations,
         mode = str("driving")
     )["rows"][0]["elements"][0]["distance"]["value"]
 
-    #conversions
+    # conversions
     miles = meters * 0.000621371
-    shortTon = pounds/2000
-    emissions_factor = 161.8
+    kilometers = meters / 1000
+    shortTon = weight_kg * 0.001102311
+
+    # factors
+    emissions_factor = 161.8 #grams/mile, need miles
+
+    # model
     grams_co2 = shortTon * miles * emissions_factor
-    lbs_co2 = grams_co2 * 0.0022046226
+
+    kg_co2 = grams_co2/1000
+
 
     #outputs
-    return print("Package will travel {} miles and generate {} pounds of CO2" 
-        .format(round(miles, 2), round(lbs_co2, 2))
+    return print("Package will travel {} kilometers and generate {} kilograms of CO2" 
+        .format(round(kilometers, 2), round(kg_co2, 2))
         )
+
 
 shipping_co2(
     "2220 S Oak St, Port Angeles, WA, 98362"
-    , "2000 Pennsylvania Ave, Washington, D.C. 11100"
-    , 123.45
+    , "918 Windsor St, Santa Cruz CA 95062"
+    , 10
 )
